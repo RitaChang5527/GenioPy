@@ -6,10 +6,4 @@
             "use": "@vercel/nodemon"
         }
     ],
-    "routes": [
-        {
-            "src": "(.*)",
-            "dest": "/"
-        }
-    ]
 }
