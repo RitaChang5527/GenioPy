@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+body {
+  color: #222;
+}
+img {
+  max-width: 100%;
+}
+main {
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
+  margin-top: 20px;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+div.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 700px) {
+  div.post {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+div.post div.texts h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+div.post div.texts a {
+  text-decoration: none;
+  color: inherit;
+}
+div.post p.info {
+  margin: 6px 0;
+  color: #888;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+div.post p.info a.author {
+  color: #333;
+}
+div.post p.summary {
+  padding: 10px 0;
+  line-height: 1.4rem;
+}
+form.login form.register {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+form.login h1,
+form.register h1 {
+  text-align: center;
+}
+
+div.post-page div.image {
+  max-height: 500px;
+  display: flex;
+  overflow: hidden;
+}
+div.post-page div.image img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+div.post-page a {
+  color: #333;
+  text-decoration: underline;
+}
+div.post-page h1 {
+  text-align: center;
+  margin: 10px 0 5px;
+}
+div.post-page time {
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  color: #aaa;
+  margin: 10px 0;
+}
+div.post-page div.author {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+div.content p {
+  line-height: 1.7rem;
+  margin: 30px 0;
+}
+div.content li {
+  margin-bottom: 10px;
+}
+div.edit-row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.post-page a.edit-btn {
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+a svg {
+  height: 20px;
+}
+
+.python-code-editor {
+  width: 100%;
+}
+
+.python-code-editor {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+  max-width: 1050px;
+  margin: 0;
+}
+
+/* -----------------------Draw---------------------- */
+
+section {
+  background: #fff;
+  border-radius: 7px;
+}
+
+.tools-board {
+  width: 210px;
+  padding: 15px 22px 0;
+}
+
+.row {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.color-options {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  outline: none; /* 避免點擊時出現外框 */
+  cursor: pointer;
+  margin: 10px;
+  transition: border-color 0.3s; 
+}
+
+input[type="radio"]:checked {
+  border: 4px solid #000;
+}
+
+input.option-red {
+  background-color: #ff0000;
+}
+
+input.option-orange {
+  background-color: #ffa500;
+}
+
+input.option-green {
+  background-color: #008000;
+}
+
+input.option-black {
+  background-color: #000000;
+}
+
+
+.buttons button {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  font-size: 0.9rem;
+  margin-bottom: 13px;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons .clear-canvas {
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  transition: all 0.3s ease;
+}
+
+.clear-canvas:hover {
+  color: #fff;
+  background: #6c757d;
+}
+
+.buttons .save-img {
+  background: #4a98f7;
+  border: 1px solid #4a98f7;
+}
+
+.drawing-board {
+  flex: 1;
+  overflow: hidden;
+}
+
+.drawing-board canvas {
+  border: 2px solid #c7c7c7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(143, 143, 143, 0.1);
+}
